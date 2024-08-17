@@ -1,5 +1,4 @@
 #from gpiozero import LED
-from time import sleep
 import psutil
 from datetime import datetime
 
@@ -7,7 +6,7 @@ from datetime import datetime
 #led_red = LED(21)
 #led_green = LED(27)
 
-file = open("/home/ubuntu/Desktop/cpu_usage_log.txt", "a")
+file = open("cpu_usage_loggg.txt", "a")
 
 while True:
     cpu_usage = psutil.cpu_percent(interval = 5)
@@ -30,6 +29,7 @@ while True:
 
     timestamp = f"{datetime.now().strftime('%Y/%m/%d %HH %MM %SS')}"
     Data = f"{timestamp} - CPU Usage: {cpu_usage}%\n"
+    file.write(Data)
     print(f'{timestamp} - CPU Usage: {cpu_usage}%')
 
 
