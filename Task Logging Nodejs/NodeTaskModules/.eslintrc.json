@@ -1,0 +1,14 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-console": "off",  // Disable no-console rule
+        "no-var": "error",    // Enforce let/const instead of var
+        "prefer-const": "warn"  // Suggest const if a variable is never reassigned
+    }
+}
