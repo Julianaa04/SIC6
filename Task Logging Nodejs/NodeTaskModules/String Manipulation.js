@@ -1,5 +1,3 @@
-// String Manipulation.js
-
 function stringManipulation(msg) {
     if (!msg || !msg.payload || typeof msg.payload.text !== 'string') {
         console.error("Invalid input:", msg);
