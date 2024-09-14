@@ -1,4 +1,3 @@
-// Message_Processing.js
 function messageProcessing(msg) {
     if (!msg || !msg.payload || typeof msg.payload.temperature === 'undefined') {
         console.error("Invalid message format:", msg);
