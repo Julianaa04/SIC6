@@ -1,5 +1,3 @@
-// Time-Based Greeting.js
-
 function timeBasedGreeting() {
     const now = new Date();
     const hours = now.getHours();
